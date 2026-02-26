@@ -203,12 +203,3 @@ Este projeto demonstra na prática:
 - Aplicação de algoritmos clássicos em cenário de transporte aéreo.
 
 ---
-
-## 🔮 Melhorias futuras sugeridas
-
-- Adicionar migrations/arquivo SQL oficial do schema.
-- Padronizar respostas de API sempre em JSON.
-- Validar entrada no servidor (tipos, limites, sanitização).
-- Implementar autenticação e perfis de acesso.
-- Tratar melhor erros e estados de loading no front.
-- Criar testes automatizados para algoritmos de grafo.
