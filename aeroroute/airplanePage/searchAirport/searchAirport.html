@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="searchAirport.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid py-2 border-bottom" id="menuBar">
+        <div class="container">
+            <div class="row align-items-center g-2">
+
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <a class="text-decoration-none text-center" id="linkBack" href="../../index.html">
+                        AeroRoute System
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-9">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end flex-wrap">
+                        <a class="btn btn-outline-primary" href="../airplaneSignIn/airplanePageSignIn.html">Cadastrar
+                            aeronave</a>
+                        <a class="btn btn-outline-primary" href="../searchAirplane/searchAirplane.html">Buscar
+                            aeronave</a>
+                        <a class="btn btn-primary" href="../searchAirport/searchAirport.html">Buscar
+                            aeroporto</a>
+                        <a class="btn btn-outline-primary" href="../minTree/minTree.html">Modo turista</a>
+                        <a class="btn btn-outline-danger" href="../deleteAirplane/deleteAirplane.html">Deletar
+                            aeronave</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card mx-auto mb-4" style="max-width: 700px;">
+            <div class="card-body ps-5">
+                <h5 class="card-title mb-2 text-center text-md-start">Buscar aeroporto</h5>
+
+                <form class="row align-items-end" id="formBusca">
+                    <div class="col-12 col-sm-8">
+                        <label for="codigoBusca" class="form-label">Digite o nome do aeroporto</label>
+                        <input type="text" id="codigoBusca" class="form-control" required>
+                    </div>
+                    <div class="col-12 col-sm-4 d-grid pt-2">
+                        <button type="submit" class="btn btn-primary" id="searchButton">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4" id="resultadoBusca" hidden>
+        <div class="card mx-auto mb-4">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>Resultados</h2>
+                </div>
+                <div class="col-12">
+                    <ul id="listaResultados"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchAirport.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: system-ui, Arial;
+}
+
+@media (max-width: 768px) {
+    #airportsList {
+        display: none;
+    }
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#backButton {
+    text-decoration: none;
+}
+
+.panel {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1000;
+    background: white;
+    padding: 10px 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+}
+
+#textPanel {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #25272b
+}
+
+#airportsList {
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    font-family: sans-serif;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+
+.airport-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #f3f4f6;
+    border-radius: 999px;
+    margin: 2px;
+}
+
+#clearroutes,
+#clearAll,
+#setarRadio {
+    position: relative;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid rgb(218, 217, 217);
+    box-shadow: 2px 2px rgb(190, 190, 190);
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 6px 10px;
+    background: #fff;
+}
+
+button:hover {
+    background: #f9fafb;
+}
